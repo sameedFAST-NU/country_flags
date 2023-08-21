@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+b,p {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card {
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.CountryName{
+  font-weight: bold;
+  font-size: medium;
+  padding: 5%;
+}
+
+.cardText{
+  padding: 5%;
+  font-size: small;
+}
