@@ -1,4 +1,5 @@
 import CountryCard from './CountryCard';
+import Header from './Header';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -12,6 +13,7 @@ function App() {
   })
 
   return <body>
+    <Header/>
     <div className='cardsContainer'>
       {
         countries.map((country) => (
@@ -19,7 +21,7 @@ function App() {
           <CountryCard
           countryName = {country.name.official}
           population = {country.population}
-          flagImageUrl = "https://cdn.britannica.com/46/3346-004-D3BDE016/flag-symbolism-Pakistan-design-Islamic.jpg"
+          flagImageUrl = {country.flags.png}
           region = {country.region}
           capital = {country.capital}
           />
