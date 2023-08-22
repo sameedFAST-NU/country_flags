@@ -37,7 +37,7 @@ img {
   width: 250px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .CountryName{
@@ -53,5 +53,15 @@ img {
 
 .header{
   background-color: hsl(0, 0%, 100%);
-  height: 10%;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  padding: 7%;
+  font-weight: 800;
+  font-size: 20px;
 }
