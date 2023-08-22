@@ -1,5 +1,8 @@
+
 export default function CountryCard(props) {
     const { countryName, flagImageUrl, population, region, capital } = props;
+
+
     return(
         <>
             <img src={flagImageUrl} 
