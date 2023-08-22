@@ -24,12 +24,10 @@ img {
   margin-bottom: 10px;
 }
 
-
-
-
 .cardsContainer{
   display: flex;
   justify-content:space-evenly ;
+  flex-wrap: wrap;
 }
 
 .card {
