@@ -23,10 +23,6 @@ img {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
-
-
-
 .cardsContainer{
   display: flex;
   justify-content:space-evenly ;
@@ -40,6 +36,8 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .CountryName{
   font-weight: bold;
   font-size: medium;
@@ -50,3 +48,6 @@ img {
   padding: 5%;
   font-size: small;
 }
+
+
+
