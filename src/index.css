@@ -27,11 +27,11 @@ img {
 
 
 
-body{
+.cardsContainer{
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content:space-evenly ;
 }
+
 .card {
   height: 350px;
   width: 250px;
