@@ -1,5 +1,6 @@
 import CountryCard from './CountryCard';
 import Header from './Header';
+import SearchBar from './SearchBar';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -14,12 +15,13 @@ function App() {
 
   return <body>
     <Header/>
+    <SearchBar/>
     <div className='cardsContainer'>
       {
         countries.map((country) => (
           <div className='card'>
           <CountryCard
-          countryName = {country.name.official}
+          countryName = {country.name.common}
           population = {country.population}
           flagImageUrl = {country.flags.png}
           region = {country.region}
