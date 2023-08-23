@@ -11,11 +11,17 @@ function App() {
     axios.get("https://restcountries.com/v3.1/all")
     .then(response => setCountries(response.data))
     .catch(error => console.error(error))
-  })
-
+  },[])
+  function filteredCountries(region){
+    let apiLink = "https://restcountries.com/v3.1/region/" + region
+    axios.get(apiLink)
+    .then(response => setCountries(response.data))
+    .catch(error => console.error(error))
+    
+  }
   return <body>
     <Header/>
-    <SearchBar/>
+    <SearchBar region_handler={filteredCountries}/>
     <div className='cardsContainer'>
       {
         countries.map((country) => (
