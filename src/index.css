@@ -18,7 +18,7 @@ b,p {
 
 img {
   width: 100%;
-  height: auto;
+  height: 45%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -58,6 +58,15 @@ select:focus{
   background-color: hsl(0, 0%, 100%);
 }
 
+button{
+  margin: 4%;
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .cardsContainer{
   display: flex;
   justify-content:space-evenly ;
@@ -91,6 +100,7 @@ select:focus{
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .title{
