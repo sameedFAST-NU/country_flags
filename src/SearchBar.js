@@ -3,6 +3,7 @@ export default function SearchBar() {
         <div className="search">
             <input type="text" placeholder="Search for a Country..."></input>
             <select placeholder="Filter by Region">
+                <option value="all">All</option>
                 <option value="america">America</option>
                 <option value="africa">Africa</option>
                 <option value="asia">Asia</option>
