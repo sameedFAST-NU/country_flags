@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
-export default function HomePage() {
+export default function HomePage({themeChanger}) {
     const [countries, setCountries] = useState([])
 
   useEffect(()=>{
@@ -12,7 +12,7 @@ export default function HomePage() {
     .then(response => setCountries(response.data))
     .catch(error => console.error(error))
   },[])
-  
+
   function filteredCountries(region){
     const apiLink = "https://restcountries.com/v3.1/region/" + region
     axios.get(apiLink)
@@ -27,7 +27,7 @@ export default function HomePage() {
     .catch(error => console.error(error))
   }
   return <body>
-    <Header/>
+    <Header changeTheme = {themeChanger}/>
     <SearchBar region_handler={filteredCountries} searchHandler={searchCountries}/>
     <div className='cardsContainer'>
       {

@@ -1,8 +1,12 @@
 import HomePage from './HomePage';
+import React, { useState } from 'react';
 
 function App() {
+  const[isThemeDark, setIsThemeDark] = useState(false);
+
+  const changeTheme = () => setIsThemeDark(!isThemeDark)
   return(
-    <HomePage/>
+    <HomePage themeChanger ={changeTheme}/>
   )
   
 }
