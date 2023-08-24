@@ -18,20 +18,18 @@ b,p {
 
 img {
   width: 100%;
-  height: 45%;
+  height: 50%;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 input{
   margin-left: 4%;
-  height: 50px;
-  width: 30%;
+  height: 90%;
+  width: 90%;
   border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   background-color: hsl(0, 0%, 100%);
-  font-family: Nunito Sans;
+
 }
 input:focus{
   border: none;
@@ -71,10 +69,11 @@ button{
   display: flex;
   justify-content:space-evenly ;
   flex-wrap: wrap;
+
 }
 
 .card {
-  height: 350px;
+  height: 300px;
   width: 250px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -115,4 +114,24 @@ button{
   justify-content: space-between;
   margin-top: 2%;
   margin-bottom: 2%;
+  flex-wrap: wrap;
+}
+
+.searchInput{
+  display: flex;
+  margin-left: 4%;
+  height: 50px;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: hsl(0, 0%, 100%);
+  font-family: Nunito Sans;
+  align-items: center;padding-left: 2%;
+}
+.searchIcon{
+  color:hsl(192, 3%, 38%);;
+}
+.moonIcon{
+  size: 20px;
 }
