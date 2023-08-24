@@ -7,7 +7,10 @@ export default function SearchBar({region_handler,searchHandler}) {
     }
     return(
         <div className="search">
-            <input type="text" placeholder="Search for a Country..." onKeyDown={handleSearch}></input>
+            <div className="searchInput">
+                <i className="fas fa-search searchIcon"></i>
+                <input type="text" placeholder="Search for a Country..." onKeyDown={handleSearch}></input>
+            </div>
             <RegionFilterMenue handleFilter={region_handler}/>
         </div>
     )
