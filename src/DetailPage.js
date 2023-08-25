@@ -1,4 +1,6 @@
 import Header from "./Header"
+import DetailPageButton from "./DetailPageButton";
+
 export default function DetailPage(props) {
     const {themeChanger, darkMode, countryName, flagImageUrl, population, region, capital } = props;
 
@@ -6,10 +8,12 @@ export default function DetailPage(props) {
         <body className={darkMode ? 'dark': 'light'}>
             <Header changeTheme = {themeChanger} darkMode = {darkMode}/>
             <div className="">
-                <button id='backButton' className={darkMode ? 'darkElement': 'lightElement'}>
+                <button  className={darkMode ? 'detailPageButton darkElement': 'detailPageButton lightElement'}>
                 <i class="fa-solid fa-arrow-left-long"></i> Back
                 </button>
             </div>
+            
+            
             <div className="detailsContainer">
                 <div className = "bigFlag">
                     <img src = {flagImageUrl}></img>
@@ -35,7 +39,12 @@ export default function DetailPage(props) {
                         </div>
                     </div>
 
-                    <div className="borders"><b>Border Countries: </b><p>nameddd</p><br/></div>
+                    <div className="borders">
+                        <b>Border Countries:</b> 
+                        <DetailPageButton darkMode={darkMode} label={'France'}/>
+                        <DetailPageButton darkMode={darkMode} label={'Germany'}/>
+                        <DetailPageButton darkMode={darkMode} label={'Poland'}/>
+                    </div>
                 </div>
             </div>
 
