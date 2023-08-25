@@ -173,18 +173,29 @@ button{
   height: 300px;
   margin-top: 4%;
   margin-right: 10%;
-  background-color: blue;
-  display: flex;
+  
 }
 
 .detail_name{
   margin: 20px;
-  background-color: brown;
-  width: 100%;
+  width: 80%;
   height: fit-content;
   font-size: 28px;
   font-family: Nunito Sans;
   font-weight: 800;
+}
+.contentCard{
+  width: 40%;
+}
+
+.contentcards{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+.borders{
+  margin: 20px;
 }
 
 #backButton{

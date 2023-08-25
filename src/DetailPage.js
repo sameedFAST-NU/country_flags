@@ -19,6 +19,23 @@ export default function DetailPage(props) {
                     <div className="detail_name">
                         Belgium
                     </div>
+
+                    <div className="contentcards">
+                        <div className="contentCard">
+                            <b>Native Name: </b><p>nameddd</p><br/>
+                            <b>Poppulation: </b><p>39082</p><br/>
+                            <b>Region: </b><p>eu</p><br/>
+                            <b>Sub Region: </b><p>west eu</p><br/>
+                            <b>Capital: </b><p>brussels</p><br/>
+                        </div>
+                        <div className="contentCard">
+                            <b>Top Level Domain: </b><p>nameddd</p><br/>
+                            <b>Currencies: </b><p>nameddd</p><br/>
+                            <b>Languages: </b><p>nameddd</p><br/>
+                        </div>
+                    </div>
+
+                    <div className="borders"><b>Border Countries: </b><p>nameddd</p><br/></div>
                 </div>
             </div>
 
