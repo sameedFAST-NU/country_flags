@@ -2,6 +2,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+.noScroll{
+  overflow: hidden;
 }
 
 code {
@@ -14,7 +18,11 @@ b,p {
   font-family: Nunito Sans;
 }
 
-img {
+img{
+  height: 100%;
+  width: 100%;
+}
+.imgCard {
   width: 100%;
   height: 50%;
   border-radius: 5px;
@@ -145,4 +153,47 @@ button{
 .darkElement{
   background-color:  hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
+}
+
+
+.bigFlag{
+  width: 400px;
+  height: 300px;
+  margin: 4%;
+}
+
+.detailsContainer{
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsContent{
+  width: 600px;
+  height: 300px;
+  margin-top: 4%;
+  margin-right: 10%;
+  background-color: blue;
+  display: flex;
+}
+
+.detail_name{
+  margin: 20px;
+  background-color: brown;
+  width: 100%;
+  height: fit-content;
+  font-size: 28px;
+  font-family: Nunito Sans;
+  font-weight: 800;
+}
+
+#backButton{
+  box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  padding-left: 2%;
+  padding-right: 3%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
