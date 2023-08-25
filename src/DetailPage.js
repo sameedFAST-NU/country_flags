@@ -7,12 +7,10 @@ export default function DetailPage(props) {
     return(
         <body className={darkMode ? 'dark': 'light'}>
             <Header changeTheme = {themeChanger} darkMode = {darkMode}/>
-            <div className="">
-                <button  className={darkMode ? 'detailPageButton darkElement': 'detailPageButton lightElement'}>
+        
+            <button  className={darkMode ? 'backButton darkElement': 'backButton lightElement'}>
                 <i class="fa-solid fa-arrow-left-long"></i> Back
-                </button>
-            </div>
-            
+            </button>
             
             <div className="detailsContainer">
                 <div className = "bigFlag">
@@ -40,7 +38,7 @@ export default function DetailPage(props) {
                     </div>
 
                     <div className="borders">
-                        <b>Border Countries:</b> 
+                        <b>Border Countries: </b> 
                         <DetailPageButton darkMode={darkMode} label={'France'}/>
                         <DetailPageButton darkMode={darkMode} label={'Germany'}/>
                         <DetailPageButton darkMode={darkMode} label={'Poland'}/>
