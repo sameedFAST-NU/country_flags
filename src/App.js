@@ -2,11 +2,14 @@ import HomePage from './HomePage';
 import React, { useState } from 'react';
 
 function App() {
-  const[isThemeDark, setIsThemeDark] = useState(false);
+  const[darkMode, setdarkMode] = useState(false);
 
-  const changeTheme = () => setIsThemeDark(!isThemeDark)
+  const changeTheme = () => setdarkMode(!darkMode)
+
   return(
-    <HomePage themeChanger ={changeTheme}/>
+    <div className={darkMode ? 'dark': 'light'}>
+      <HomePage themeChanger ={changeTheme} darkMode = {darkMode}/>
+    </div>
   )
   
 }

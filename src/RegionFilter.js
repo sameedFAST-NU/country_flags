@@ -1,7 +1,7 @@
-export default function RegionFilterMenue({handleFilter}) {
+export default function RegionFilterMenue({handleFilter, darkMode}) {
     
     return(
-        <select onChange={(event) => handleFilter(event.target.value)}>
+        <select className={darkMode ? 'darkElement': 'lightElement'} onChange={(event) => handleFilter(event.target.value)}>
             <option value="all">All</option>
             <option value="americas">Americas</option>
             <option value="africa">Africa</option>

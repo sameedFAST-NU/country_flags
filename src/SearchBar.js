@@ -1,5 +1,5 @@
 import RegionFilterMenue from "./RegionFilter"
-export default function SearchBar({region_handler,searchHandler}) {
+export default function SearchBar({region_handler,searchHandler, darkMode}) {
     function handleSearch(event) {
         if (event.key === 'Enter') {
             searchHandler(event.target.value)
@@ -7,11 +7,11 @@ export default function SearchBar({region_handler,searchHandler}) {
     }
     return(
         <div className="search">
-            <div className="searchInput">
+            <div className={darkMode ? 'searchInput darkElement': 'searchInput lightElement'}>
                 <i className="fas fa-search searchIcon"></i>
-                <input type="text" placeholder="Search for a Country..." onKeyDown={handleSearch}></input>
+                <input className={darkMode ? 'darkElement': 'lightElement'} type="text" placeholder="Search for a Country..." onKeyDown={handleSearch}></input>
             </div>
-            <RegionFilterMenue handleFilter={region_handler}/>
+            <RegionFilterMenue handleFilter={region_handler} darkMode = {darkMode}/>
         </div>
     )
 }
