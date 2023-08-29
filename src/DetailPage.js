@@ -35,7 +35,7 @@ export default function DetailPage(props) {
         }    
         return languagesList
     }
-    const languages = getLanguagesList(country.languages)
+    const languages = getLanguagesList(country.languages).toString()
 
     async function getBorderName(countryCode) {
 
