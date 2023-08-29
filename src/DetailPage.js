@@ -3,13 +3,14 @@ import DetailPageButton from "./DetailPageButton";
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
+const API = process.env.API
 export default function DetailPage(props) {
     const {themeChanger, darkMode} = props;
     const [country, setCountry] = useState([])
     const [borderNames, setBorderNames] = useState([])
 
     useEffect(()=>{
-        axios.get("https://restcountries.com/v3.1/alpha/BE")
+        axios.get(API + "alpha/BE")
         .then(response => setCountry(response.data[0]))
         .catch(error => console.error(error))
     },[])
@@ -28,7 +29,7 @@ export default function DetailPage(props) {
     const currencies = getCurrenciesList(country.currencies)
 
     const getLanguagesList = (languages) => {
-        let languagesList = []
+        const languagesList = []
         for (const key in languages) {
             languagesList.push(languages[key])
             
@@ -39,7 +40,7 @@ export default function DetailPage(props) {
 
     async function getBorderName(countryCode) {
 
-        const apiLink = "https://restcountries.com/v3.1/alpha/" + countryCode
+        const apiLink = API + "alpha/" + countryCode
         try {
             const response = await axios.get(apiLink);
             const border_country = response.data[0]
@@ -67,8 +68,7 @@ export default function DetailPage(props) {
         .catch(error => {
             console.error(error);
         });
-    });    
-    console.log(borderNames)
+    });
 
     return(
         // "abc"
