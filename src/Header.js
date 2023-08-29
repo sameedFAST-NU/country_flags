@@ -3,7 +3,7 @@ export default function Header({changeTheme, darkMode}) {
         <div className={darkMode ? 'header darkElement': 'header lightElement'}>
                 <p className="title">Where in the world?</p>
                 <button onClick={changeTheme} className={darkMode ? 'darkElement': 'lightElement'}>
-                    <i class="fa-regular fa-moon moonIcon"></i> Dark Mode
+                    <i className="fa-regular fa-moon moonIcon"></i> Dark Mode
                 </button>
         </div>
     )

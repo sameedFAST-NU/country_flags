@@ -7,12 +7,9 @@ function App() {
 
   const changeTheme = () => setdarkMode(!darkMode)
 
-  return(
-    <div className={darkMode ? 'dark': 'light'}>
-      {/* <HomePage themeChanger ={changeTheme} darkMode = {darkMode}/> */}
-      <DetailPage themeChanger={changeTheme} darkMode = {darkMode} 
-      flagImageUrl = "https://flagcdn.com/w2560/be.png"/>
-    </div>
+  return( 
+    <DetailPage themeChanger={changeTheme} darkMode = {darkMode} />
+    //{/* <HomePage themeChanger ={changeTheme} darkMode = {darkMode}/> */}
   )
   
 }

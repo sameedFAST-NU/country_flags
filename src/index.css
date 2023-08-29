@@ -219,3 +219,7 @@ button{
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.detailText{
+  font-family: "Nunito Sans";
+  margin-bottom: 5px;
+}
