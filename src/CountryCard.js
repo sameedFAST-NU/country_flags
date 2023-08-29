@@ -4,7 +4,7 @@ export default function CountryCard(props) {
 
     return(
         <>
-            <img src={flagImageUrl} className="imgCard">
+            <img src={flagImageUrl} alt={'Flag of ${countryName}'} className="imgCard">
             </img>
 
             <p className="CountryName">{countryName}</p><br/>
