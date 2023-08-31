@@ -4,25 +4,27 @@ import SearchBar from "./SearchBar";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
+const apiUrl = process.env.REACT_APP_API_URL;
+
 export default function HomePage({ themeChanger, darkMode }) {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://restcountries.com/v3.1/" + "all")
+      .get(`${apiUrl}all`)
       .then((response) => setCountries(response.data))
       .catch((error) => console.error(error));
   }, []);
 
   function filteredCountries(region) {
-    const apiLink = "https://restcountries.com/v3.1/" + "region/" + region;
+    const apiLink = `${apiUrl}region/${region}`;
     axios
       .get(apiLink)
       .then((response) => setCountries(response.data))
       .catch((error) => console.error(error));
   }
   function searchCountries(name) {
-    const apiLink = "https://restcountries.com/v3.1/" + "name/" + name;
+    const apiLink = `${apiUrl}name/${name}`;
     axios
       .get(apiLink)
       .then((response) => setCountries(response.data))
