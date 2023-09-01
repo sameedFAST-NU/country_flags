@@ -3,8 +3,7 @@ import Header from "./Header";
 import SearchBar from "./SearchBar";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-
-const apiUrl = process.env.REACT_APP_API_URL;
+import {apiUrl} from "./constants"
 
 export default function HomePage({ themeChanger, darkMode }) {
   const [countries, setCountries] = useState([]);

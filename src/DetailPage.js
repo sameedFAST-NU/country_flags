@@ -2,8 +2,7 @@ import Header from "./Header";
 import DetailPageButton from "./DetailPageButton";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-
-const apiUrl = process.env.REACT_APP_API_URL;
+import {apiUrl} from "./constants"
 
 export default function DetailPage(props) {
   const { themeChanger, darkMode } = props;

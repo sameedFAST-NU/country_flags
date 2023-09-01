@@ -2,7 +2,6 @@ import DetailPage from "./DetailPage";
 import HomePage from "./HomePage";
 import React, { useState } from "react";
 
-const URL = process.env.API;
 function App() {
   const [darkMode, setdarkMode] = useState(false);
 
